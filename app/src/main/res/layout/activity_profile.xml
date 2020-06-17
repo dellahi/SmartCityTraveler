@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg"
+                android:background="@color/imgbg"
+                android:alpha="0.8"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.alexzh.circleimageview.CircleImageView
+                    android:id="@+id/circleview"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cvv"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="5dp"
+                    app:view_shadowRadius="2dp"
+                    app:view_shadowDx="2dp"
+                    app:view_shadowDy="0dp"
+                    app:view_borderWidth="2dp"
+                    app:view_borderColor="#cccccc"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="180dp"
+                android:text="MonUsername"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.35"
+                android:padding="20dp"
+                android:text="Name"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:hint="dellahi elwaghf"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:background="#00000000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#ACACAC"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.3"
+                android:padding="20dp"
+                android:text="Email"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:hint="dllahi@ENSIM.com"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:background="#00000000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#ACACAC"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/myTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.5"
+                android:padding="20dp"
+                android:text="Password"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:hint="**********"
+                android:background="#00000000"
+                android:padding="20dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#ACACAC"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:text="Edit your Profile"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/editprofil"
+                style="@style/MaterialSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="13dp"
+                android:checked="true"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:switchPadding="16dp"
+                android:text="Edit" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#ACACAC"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Display Status Goes Here...."
+            android:textColor="#868686"
+            android:textSize="16dp"
+            android:background="#f0f0f4"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="22dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

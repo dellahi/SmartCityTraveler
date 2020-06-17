@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.232" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/signup"
         android:layout_width="153dp"
         android:layout_height="51dp"
         android:text="Not member? Sign Up"

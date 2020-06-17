@@ -9,19 +9,19 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Home extends AppCompatActivity {
+public class Profile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_profile);
         Toolbar toolbar= findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
        // getSupportActionBar().setDisplayShowHomeEnabled(true);
         toolbar.setTitle("Home");
-        //toolbar.inflateMenu(R.menu.menu);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,8 +33,8 @@ public class Home extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
 
-            case R.id.profil:
-                Intent intent = new Intent(this, Profile.class);
+            case R.id.home:
+               Intent intent = new Intent(this, Home.class);
                 this.startActivity(intent);
                 break;
             case R.id.logout:
