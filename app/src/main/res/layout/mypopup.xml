@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Pesonnaliser votre sortie"
+        android:textColor="#FF9800"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saisir vos informations"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:drawableRight="@drawable/ic_edit_location_black_24dp"
+        android:hint="Localisation" />
+
+    <EditText
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Durrée (h)" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="#FF9800"
+            android:textColor="#000"
+            android:text="Valider"
+            />
+        <Button
+            android:id="@+id/annuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_margin="10dp"
+            android:background="#FF9800"
+            android:textColor="#000"
+            android:text="Annuler"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -472,10 +472,13 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/visite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
+            android:background="#FF9800"
+            android:textColor="#000"
+            android:layout_gravity="center"
             android:text="Nouvelle visite" />
 
     </LinearLayout>

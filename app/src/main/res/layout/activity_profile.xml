@@ -40,7 +40,6 @@
                     app:view_shadowDx="2dp"
                     app:view_shadowDy="0dp"
                     app:view_borderWidth="2dp"
-                    app:view_borderColor="#cccccc"
                     />
             </LinearLayout>
 
@@ -169,6 +168,8 @@
                 android:elevation="2dp"
                 android:gravity="center"
                 android:switchPadding="16dp"
+                android:background="#FF9800"
+                android:textColor="#000"
                 android:text="Edit" />
         </LinearLayout>
         <View
@@ -178,7 +179,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Display Status Goes Here...."
+            android:text="Informations de Profil"
             android:textColor="#868686"
             android:textSize="16dp"
             android:background="#f0f0f4"
