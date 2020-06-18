@@ -19,7 +19,7 @@ public class Profile extends AppCompatActivity {
         setSupportActionBar(toolbar);
        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
        // getSupportActionBar().setDisplayShowHomeEnabled(true);
-        toolbar.setTitle("Home");
+        //toolbar.setTitle("Home");
     }
 
 
@@ -39,6 +39,10 @@ public class Profile extends AppCompatActivity {
                 break;
             case R.id.logout:
                 intent = new Intent(this, Login.class);
+                this.startActivity(intent);
+                break;
+            case R.id.historique:
+                intent = new Intent(this, History.class);
                 this.startActivity(intent);
                 break;
             default: return super.onOptionsItemSelected(item);

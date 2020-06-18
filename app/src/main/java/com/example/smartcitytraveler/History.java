@@ -9,19 +9,19 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Home extends AppCompatActivity {
+public class History extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_history);
         Toolbar toolbar= findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-       //getSupportActionBar().setDisplayShowHomeEnabled(true);
+        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        // getSupportActionBar().setDisplayShowHomeEnabled(true);
         //toolbar.setTitle("Home");
-        //toolbar.inflateMenu(R.menu.menu);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,16 +33,16 @@ public class Home extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
 
-            case R.id.profil:
-                Intent intent = new Intent(this, Profile.class);
+            case R.id.home:
+                Intent intent = new Intent(this, Home.class);
                 this.startActivity(intent);
                 break;
             case R.id.logout:
                 intent = new Intent(this, Login.class);
                 this.startActivity(intent);
                 break;
-            case R.id.historique:
-                intent = new Intent(this, History.class);
+            case R.id.profil:
+                intent = new Intent(this, Profile.class);
                 this.startActivity(intent);
                 break;
             default: return super.onOptionsItemSelected(item);
