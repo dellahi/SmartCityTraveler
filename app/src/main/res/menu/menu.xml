@@ -3,29 +3,41 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home"
-        android:title="Profile"
-        android:icon="@drawable/homeicon"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/add"
         android:title="Add"
-        android:icon="@drawable/addtrip"
-        app:showAsAction="ifRoom" />
+        android:icon="@drawable/ic_add_location_black_24dp"
+        app:showAsAction="ifRoom"/>
 
-    <item
-        android:id="@+id/profil"
-        android:title="Profile"
-        android:icon="@drawable/profilicon"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/historique"
-        android:title="History"
-        android:icon="@drawable/historiqueicon"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/logout"
-        android:title="Logout"
-        android:icon="@drawable/logouticon"
-        app:showAsAction="never" />
+       <item
+           android:id="@+id/action_notification1"
+           android:icon="@drawable/ic_more_vert_black_24dp"
+           android:orderInCategory="100"
+           android:title=""
+           app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/profil"
+                android:title="Profile"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:orderInCategory="100"
+                />
+            <item
+                android:id="@+id/historique"
+                android:title="History"
+                android:icon="@drawable/ic_history_black_24dp"
+                android:orderInCategory="100"
+                />
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:orderInCategory="100"
+                 />
+        </menu>
+    </item>
 
 </menu>
